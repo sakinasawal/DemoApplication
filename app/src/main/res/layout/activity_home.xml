@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_qr_code"
+        android:contentDescription="@string/qr_code"/>
+
+    <TextView
+        android:id="@+id/tv_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="4dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_qr_code"
+        android:text="Welcome to QR Code Generator and QR Code Scanner"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_generate_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_qr_code"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/generate_qr_code" />
+
+    <Button
+        android:id="@+id/btn_scan_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_generate_code"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/scan_qr_code" />
+
+</RelativeLayout>
