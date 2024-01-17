@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -37,7 +36,6 @@ class MainActivity : AppCompatActivity() {
                 val userName = etName.text.toString().trim()
 
                 val dialogBinding = DialogWelcomeBinding.inflate(LayoutInflater.from(this@MainActivity))
-
                 val builder = AlertDialog.Builder(this@MainActivity)
                     .setView(dialogBinding.root)
                     .setCancelable(true)
@@ -76,6 +74,34 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
+
+            // Demo button for next screen
+//            btnEnterNextScreen.setOnClickListener{
+
+                // go to the next screen
+//                val intent = Intent(this@MainActivity, HomeActivity::class.java)
+//                startActivity(intent)
+
+                // popup dialog
+//                val dialogBinding = DialogWelcomeBinding.inflate(LayoutInflater.from(this@MainActivity))
+//
+//                val builder = AlertDialog.Builder(this@MainActivity)
+//                    .setView(dialogBinding.root)
+//                    .setCancelable(true)
+//
+//                val dialog = builder.create()
+//                dialog.show()
+//                dialogBinding.apply{
+//                    tvDialogMessage.text = "Hello Guys!"
+//                    btnDismiss.text = "Dismiss"
+//                    btnDismiss.setOnClickListener{
+//                        dialog.dismiss()
+//                        val intent = Intent(this@MainActivity, HomeActivity::class.java)
+//                        startActivity(intent)
+//                    }
+//                }
+
+//            }
 
         }
     }
