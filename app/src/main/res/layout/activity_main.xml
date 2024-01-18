@@ -50,22 +50,6 @@
         android:text="Enter"
         tools:ignore="HardcodedText" />
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_enter_qr_code"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="14dp"-->
-<!--        app:layout_constraintVertical_chainStyle="packed"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn_enter"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        android:layout_marginHorizontal="12dp"-->
-<!--        android:textSize="20sp"-->
-<!--        android:text="Next"-->
-<!--        tools:ignore="HardcodedText" />-->
-
-<!-- Demo -->
     <Button
         android:id="@+id/btn_enter_qr_code"
         android:layout_width="match_parent"
@@ -74,27 +58,46 @@
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_enter"
-        app:layout_constraintBottom_toTopOf="@id/btn_enter_next_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="12dp"
         android:textSize="20sp"
         android:text="Next"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_enter_next_screen"
-        style="@style/RoundBtnStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_enter_qr_code"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="12dp"
-        android:textSize="20sp"
-        android:text="Next Screen"
-        tools:ignore="HardcodedText" />
+<!-- Demo -->
+<!--    <Button-->
+<!--        android:id="@+id/btn_enter_qr_code"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        app:layout_constraintVertical_chainStyle="packed"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_enter"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/btn_enter_next_screen"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginHorizontal="12dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="Next"-->
+<!--        tools:ignore="HardcodedText" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_enter_next_screen"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        app:layout_constraintVertical_chainStyle="packed"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_enter_qr_code"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginHorizontal="12dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="Next Screen"-->
+<!--        tools:ignore="HardcodedText" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--add style in next button -->
+<!--    style="@style/RoundBtnStyle"-->
